@@ -1,0 +1,424 @@
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    background-color: #ccc;
+    height: 636px;
+    width: 15%;
+    text-align: center;
+    list-style: none;
+    font-size: 15px;
+    top:116.5px;
+    /* z-index: 0; */
+    border: 1px solid #ccb;
+    overflow-x: hidden;
+}
+
+.text .fa-sharp{
+    margin-left: -31px;
+    
+}
+
+.sidebar li{
+    padding: 10.65px 0 10.65px 0;
+}
+
+.sidebar li:hover{
+    opacity: 0.5;
+    background-color: white;
+}
+
+.sidebar select{
+    padding: 8px;
+}
+
+.sidebar select option{
+    background-color: #ccc;
+    border: none;
+}
+
+.sidebar li:hover{
+    opacity: 0.5;
+    background-color: white;
+}
+
+.sidebar select:hover{
+    opacity: 0.5;
+    background-color: white;
+}
+
+.sidebar .sidebar__introduce{
+    background-color: #ccc;
+    border: none;
+    text-align: center;
+    width: 100%;
+    -webkit-appearance: none;
+    z-index: 0;
+    /* transform: translateX(10px); */
+    color: #333E63;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+.sidebar .sidebar__seasons{
+    list-style: none;
+    /* display: inline; */
+    display: none;
+}
+
+
+/* Career content */
+.career-content{
+    margin-left: 15%;
+    width: 85%;
+    /* position: absolute; */
+    /* transform: translateY(200px);
+    top:500px */
+    padding-top: 118px;
+    /* overflow: auto; */
+}
+
+.career-head{
+    height: 200px;
+    /* background-color: black; */
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+}
+
+.career-head > img{
+    border-radius: 10px;
+    font-size: 99%;
+    animation: careerHeadImg ease-in 0.5s;
+    box-shadow: 10px 10px 5px lightblue;
+    /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */
+}
+
+.career-head .left{
+    margin-right: -300px;
+}
+
+.career-head .right{
+    margin-left: -300px;
+}
+
+@keyframes careerHeadImg {
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.career-head .nation-club{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    animation: nationClub ease-in 2s;
+    /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@keyframes nationClub {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.career-head .nation-club p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.career-head .nation-club p > img{
+    width: 15px;
+    height: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 10px 10px 5px lightblue inset; */
+}
+
+/* Career Moment */
+.career__moment{
+    margin: 40px 0 ;
+
+    background-color: white;
+    width: 100%;
+    height: 450px;
+    /* overflow: auto; */
+    display: flex;
+    justify-content: space-evenly;
+    /* border-bottom: 1px solid #ccc; */
+    /* border-top: 1px solid #ccc; */
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+
+    animation: nationClub ease-in 5s;
+}
+
+/* Achivement */
+.career__moment .achivement{
+    width: 35%;
+    /* background-color: black; */
+    /* border: 1px solid #ccc; */
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    background-image: url('../img/career/icon-award-trophy/background-achivement.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 4px solid #666;
+}
+
+.career__moment .achivement h3{
+    font-size: 12px;
+}
+
+.career__moment .achivement h3 span{
+    float: right;
+    /* transform: translateX(-50px); */
+    /* margin-right: 20px; */
+}
+
+
+.achivement .goals-assits, .titles-awards{
+    /* border: 1px solid #ccc; */
+    height: 27%;
+    display: flex;
+    justify-content: space-evenly;
+    /* text-transform: uppercase; */
+}
+
+.titles-awards{
+    /* height: 100px; */
+    height: 73%;
+    /* margin-bottom: 300px; */
+}
+
+.titles-awards h3 .icon{
+    background-image: url('../img/career/icon-award-trophy/cup-c1-icon.jpg');
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-2px);
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+
+.titles-awards .titles h3 .nha{
+    background-image: url('../img/career/icon-award-trophy/cup-nha-icon.jpg');
+}
+
+.titles-awards .titles h3 .ffclubwc{
+    background-image: url('../img/career/icon-award-trophy/cup-ffclubwc-icon.jpg');
+}
+
+.titles-awards .titles h3 .comunityshield{
+    background-image: url('../img/career/icon-award-trophy/cup-comunityshield-icon.jpg');
+}
+
+.titles-awards .titles h3 .laliga{
+    background-image: url('../img/career/icon-award-trophy/cup-laliga.jpg');
+}
+
+
+
+.titles-awards .awards h3 .balondor{
+    background-image: url('../img/career/icon-award-trophy/balondor-icon.jpg');
+}
+
+.titles-awards .awards h3 .goldenshoe{
+    background-image: url('../img/career/icon-award-trophy/goldenshoe-icon.jpg');
+}
+
+.titles-awards .awards h3 .goldmedal{
+    background-image: url('../img/career/icon-award-trophy/goldmedal-icon.jpg');
+}
+
+.titles-awards .awards h3 .ffthebest{
+    background-image: url('../img/career/icon-award-trophy/cup-fifa-the-best.jpg');
+}
+
+.titles-awards .awards h3 .goldenboot{
+    background-image: url('../img/career/icon-award-trophy/goldenboot.jfif');
+}
+
+.titles-awards .awards h3 .seriea{
+    background-image: url('../img/career/icon-award-trophy/seriea.jpg');
+}
+
+.goals-assits{
+    margin-top: 18px;
+}
+
+.goals-assits .goals-assits__left, .titles-awards .titles, .goals-assits .goals-assits__right, .titles-awards .awards{
+    width: 35%;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Moment image */
+.career__moment .moment{
+    width: 35%;
+    /* background-color: blue; */
+    border: 1px solid #ccc;
+    /* overflow: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    /* background-image: url('../img/career/background-achivement.jpg'); */
+    border: 4px solid #666;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.career__moment .moment img{
+    width: 70%;
+    /* height: 70%; */
+    font-size: 100%;
+    margin-top: 20px;
+}
+
+.career__moment .moment p{
+    font-style: italic;
+}
+
+
+/* Video */
+.career__video{
+    border-top: 1px solid #ccc;
+    height: 500px;
+    margin: 50px 0 30px 0;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+
+    animation: careerHeadImg ease-in 2s infinite;
+    animation-iteration-count: 1;
+}
+
+.career__video iframe{
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    width: calc(500px*16/9);
+    height:inherit;
+}
+
+.career__video p{
+    visibility: visible;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.career__shirts{
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.career__shirts .shirt{
+    width: 18%;
+    height: inherit;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    text-align: center;
+    animation: careerShirtsShirt ease-in 0.2s infinite;
+    animation-iteration-count: 1;
+}
+
+@keyframes careerShirtsShirt {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.career__shirts .shirt .shirt-image{
+    height: 70%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.career__shirts .shirt .text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+}
+
+.buy-btn{
+    padding: 5px 0px 5px 0px;
+    margin: 5px 23px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 25px;
+    background-color: black;
+    font-weight: bold;
+}
+
+.buy-btn:hover{
+    opacity: 0.7;
+}
+
+.club-shirt-home .shirt-image{
+    background-image: url('../img/career/2008-2009/home-shirt.jpg');
+}
+
+.club-shirt-home .shirt-image:hover{
+    background-image: url('../img/career/2008-2009/home-shirt-back.jpg');
+}
+
+.club-shirt-away .shirt-image{
+    background-image: url('../img/career/2008-2009/away-shirt.jpg');
+}
+
+.club-shirt-away .shirt-image:hover{
+    background-image: url('../img/career/2008-2009/away-shirt-back.jpg');
+}
+
+.club-shirt-third .shirt-image{
+    background-image: url('../img/career/2008-2009/third-shirt.jpg');
+}
+
+.club-shirt-third .shirt-image:hover{
+    background-image: url('../img/career/2008-2009/third-shirt-back.jpg');
+}
+
+.nation-shirt-home .shirt-image{
+    background-image: url('../img/career/2008-2009/nation-home.jpg');
+}
+
+.nation-shirt-home .shirt-image:hover{
+    background-image: url('../img/career/2008-2009/nation-home-back.jpg');
+}
+
+.nation-shirt-away .shirt-image{
+    background-image: url('../img/career/2008-2009/nation-away.jpg');
+}
+
+.nation-shirt-away .shirt-image:hover{
+    background-image: url('../img/career/2008-2009/nation-away-back.jpg');
+}
+
+
+/* Article */
+
+

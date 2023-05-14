@@ -1,0 +1,260 @@
+.modal{
+    display: none;
+}
+
+.modal.open{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-container{
+    background-color: white;
+    width: 40%;
+    min-height: 400px;
+}
+
+.order-info .modal-container{
+    min-height: 460px !important;
+}
+
+.modal-container__login, .modal-container__signup{
+    background-color: white;
+    width: 30%;
+    min-height: 500px;
+}
+
+
+.modal-header{
+    position: relative;
+    height: 100px;
+    background-color: #0f9d58;
+    color: white;
+    font-family: Open Sans;
+}
+
+.modal-close, .modal-close__login, .modal-close__signup{
+    position: absolute;
+    right: 0;
+    padding: 6px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color:black;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.modal-close:hover{
+    background-color: red;
+    color:white;
+}
+
+.modal-close__login:hover{
+    background-color: red;
+    color:white;
+}
+
+.modal-close__signup:hover{
+    background-color: red;
+    color:white;
+}
+
+
+.modal__web-name{
+    display: inline;
+    text-align: center;
+    max-height: 100px;
+    /* line-height: 50px; */
+    position: absolute;
+    /* line-height: 50px; */
+    color: white;
+    width: 100%;
+    /* position: relative; */
+}
+
+.modal-header h3{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 40px 0 10px 0 ;
+}
+
+.modal-header .modal-header__span1{
+    color: white;
+}
+
+.modal-header .modal-header__span2{
+    color: black;
+}
+
+.modal-header .modal-header__span1:hover{
+    color: #7b92df;
+}
+
+.modal-header .modal-header__span2:hover{
+    color: red;
+}
+
+
+.modal__web-name p {
+    display: inline;
+    color: #dfe6c9;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.modal-section{
+    width: 100%;
+    height: 5.5rem;
+    color: black;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.modal-section label{
+    /* height: 100%; */
+    text-align: center;
+    padding: 19px;
+    width: 50%;
+    border-right: 2px solid #ddd;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin: 0 auto; */
+}
+
+.modal-content{
+    flex-direction: column;
+    margin-top: 20px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal-content label{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.modal-content .label-container, .modal-content .input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .label-container{
+    width: 35%;
+}
+
+
+.modal-content .label-container label{
+    padding: 4.3px 0;
+    margin: 5px 0;
+}
+
+.order-info .label-container label{
+    padding: 4.7px 0;
+    margin: 5px 0;
+}
+
+.modal-content .input-container{
+    width: 65%;
+}
+
+.modal-content .input-container input, .modal-content .input-container select,.order-info .input-container label{
+    padding: 3px 0;
+    margin: 5.5px 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    overflow: auto;
+}
+
+.input-container .modal__radio-btn{
+    transform: translateY(3px);
+}
+
+.input-container__quantity{
+    width: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+}
+
+.modal-submit-btn{
+    background-color: #0f9d58;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-submit-btn:hover{
+    color: rgb(246, 241, 94);
+    opacity: 0.95;
+}
+
+.modal-or{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-or div{
+    width: 40%;
+    border-bottom: 2px solid #ddd;
+}
+
+.modal-social{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+}
+
+.modal-social div{
+    width: 30%;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.modal-social__facebook{
+    background-image: linear-gradient(to bottom, #4b66a0, #3b5998);
+}
+
+.modal-social__google{
+    background-image: linear-gradient(to bottom, #dd4e41, #c9453a);
+}
+
+.alert-danger, .alert-danger__login, .alert-danger__signup{
+    padding-top: 5px;
+    color:red;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
